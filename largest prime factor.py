@@ -14,10 +14,6 @@ def larprifac(x) :
         if x%i==0:
             factors.append(i)
             factors.append(int(x/i))
-    for i in range (1,int(x**0.50)+1):
-        if x%i==0:
-            factors.append(i)
-            factors.append(int(x/i))
     for j in factors:
         if primenumber(j):
             if j>lpf:
