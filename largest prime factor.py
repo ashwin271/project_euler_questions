@@ -7,14 +7,18 @@ def primenumber(n):
             break
     return op
 
-def larprifac(x) :
-    factors=[]
-    lpf=0
+def factors(x):
+    fct=[]
     for i in range (1,int(x**0.50)+1):
         if x%i==0:
-            factors.append(i)
-            factors.append(int(x/i))
-    for j in factors:
+            fct.append(i)
+            fct.append(int(x/i))
+    return fct
+
+def larprifac(y) :
+    f=factors(y)
+    lpf=0
+    for j in f:
         if primenumber(j):
             if j>lpf:
                 lpf=j
