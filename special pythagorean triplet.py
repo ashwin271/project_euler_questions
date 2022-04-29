@@ -13,5 +13,3 @@ def spepytrip(n):
             break
 
 spepytrip(1000)
-            
-    
